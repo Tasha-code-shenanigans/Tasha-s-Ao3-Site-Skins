@@ -1,0 +1,515 @@
+:root {
+  --siscbg: #1D0502;
+  --sischeader: #1D0502;
+  --siscaccent1: #C39F97;
+  --siscaccent2: #B47F79;
+  --siscbox: #3A120C;
+  --sisctxtmain: #E9D3CE;
+  --sisctxtcontrast: #000;
+}
+
+body,
+.toggled form,
+.dynamic form,
+.secondary,
+.dropdown {
+  color: var(--sisctxtmain);
+  background: none;
+}
+
+#workskin {
+  margin-top: 2em;
+  padding: 1.5em;
+  background: var(--siscbg);
+  color: var(--sisctxtmain);
+}
+
+.dynamic form {
+  background-color: var(--sischeader);
+}
+
+.wrapper {
+  box-shadow: none;
+}
+
+dl.work {
+  border: 2px solid var(--siscaccent2);
+  background-color: var(--siscbg);
+}
+
+dl.index dd {
+  background: var(--siscbg);
+}
+
+dt.child {
+  background: var(--siscbg);
+  padding: 0.5em;
+  font-variant: small-caps;
+}
+
+#header {
+  background-color: var(--sischeader);
+  background-image: url("https://i.postimg.cc/N0rLH08Y/Untitled327-20260807182601.png");
+  background-repeat: repeat;
+  background-size: 30% auto;
+  background-blend-mode: normal;
+}
+
+#header .heading {
+  height: 5em;
+}
+
+#header .logo,
+#header h1 sup {
+  display: none;
+}
+
+#header .heading a {
+  padding: 0.2em 0.6em;
+  color: var(--sisctxtmain);
+  background: var(--siscbg);
+}
+
+home .header h2 {
+  border-bottom: 5px solid;
+}
+
+.splash .browse li a::before {
+  color: var(--siscaccent2);
+  content: "\00BB";
+  padding: 0 0.25em 0 0;
+}
+
+#greeting .icon img {
+  box-shadow: none;
+  border: 1px solid var(--sisctextmain);
+  border-radius: 90%;
+}
+
+#greeting .dropdown .menu,
+#greeting .dropdown .menu a,
+#greeting li a {
+  color: var(--siscaccent2) !important;
+  background: var(--siscbg) !important;
+  border: none;
+  box-shadow: none;
+}
+
+#greeting .dropdown .menu a:hover,
+#greeting li a:hover,
+a.tag:hover {
+  background: var(--siscbox) !important;
+  color: var(--sisctxtcontrast);
+}
+
+#greeting .menu {
+  width: 12em;
+}
+
+#header .menu {
+  background: var(--siscbg);
+  box-shadow: none;
+  width: 20em;
+}
+
+#header .primary li:not(.search),
+#greeting li {
+  border: none;
+}
+
+#header #search {
+  display: none;
+}
+
+#header .primary {
+  background: var(--sischeader);
+  box-shadow: none;
+  border-bottom: 5px solid var(--siscaccent2);
+  border-top: 5px solid var(--siscaccent2);
+}
+
+#header .dropdown .menu li:hover a,
+#header .primary li a {
+  font-variant: small-caps;
+  color: var(--sisctxtmain) !important;
+  background: var(--siscaccent2);
+  border: none;
+  box-shadow: none;
+}
+
+#header .dropdown:hover a,
+#header .primary li:not(.search) {
+  background: var(--siscaccent1);
+}
+
+#outer {
+  background-color: var(--siscbg);
+  background-image: url("https://i.postimg.cc/N0rLH08Y/Untitled327-20260807182601.png");
+  background-size: 30% auto;
+  background-repeat: repeat;
+  background-blend-mode: normal;
+}
+
+.actions a,
+.action,
+input[type="file"],
+.actions input,
+input[type="submit"],
+button,
+.actions label,
+#main .actions a,
+#main .actions a:visited,
+#main .action,
+#main .actions input,
+#main input[type="submit"],
+#main button,
+#main .actions label {
+  background: var(--siscaccent2);
+  font-variant: small-caps;
+  color: var(--sisctxtmain);
+  border: none;
+}
+
+#dashboard .actions a,
+#dashboard .actions a:visited {
+  border: 1px solid rgba(255 255 255 0);
+}
+
+#dashboard .actions a,
+#dashboard .actions a:visited {
+  background: var(--siscbg);
+  border: 1px solid var(--siscaccent2);
+  color: var(--siscaccent2) !important;
+  font-variant: small-caps;
+}
+
+.required .autocomplete,
+p.notice,
+.notice,
+.comment_notice,
+.kudos_notice,
+.autocomplete .notice,
+ul.notes,
+.caution,
+.error,
+.comment_error,
+.kudos_error,
+.alert.flash {
+  background: var(--siscbox);
+  color: var(--sisctxtmain);
+  border: 3px solid var(--siscaccent1);
+  border-radius: 10px;
+}
+
+.current,
+#dashboard .current,
+#main .current {
+  background: var(--siscaccent1);
+  color: white;
+  font-variant: small-caps;
+  border: none;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+#dashboard .actions a:hover,
+#dashboard .actions a:focus,
+#main .actions a:hover,
+#main input[type="submit"]:hover,
+#main button:hover .actions label:hover,
+#main .action:hover {
+  box-shadow: none;
+  text-shadow: none;
+  border: none;
+  background: var(--siscbg);
+  color: var(--siscaccent1);
+  font-weight: bold;
+}
+
+#main a {
+  color: var(--siscaccent2);
+}
+
+#main a:visited {
+  color: var(--siscaccent2);
+}
+
+a.tag:visited {
+  color: var(--siscaccent2) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+  color: var(--siscaccent2);
+}
+
+h4 {
+  color: var(--sischeader);
+}
+
+.reading h4.viewed {
+  background: var(--sisctxtmain);
+  color: var(--sisctxtcontrast);
+}
+
+.splash .module h3 {
+  color: var(--siscaccent1);
+}
+
+.splash .favorite li:nth-of-type(odd) a {
+  background: none;
+}
+
+fieldset {
+  background: var(--siscbox);
+  border: 2px solid var(--siscaccent2);
+  box-shadow: none;
+  background-size: 100% auto;
+}
+
+fieldset dl,
+fieldset fieldset {
+  background: var(--siscbg);
+  color: var(--siscaccent2) !important;
+  border: 2px solid var(--siscaccent2);
+  box-shadow: none;
+}
+
+.filters dl,
+.filters dt {
+  padding: 0.5em;
+}
+
+input,
+textarea {
+  background: var(--siscbg);
+  border: 2px solid var(--siscaccent2);
+  box-shadow: none;
+  color: var(--sisctxtmain);
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  background: var(--sisctextmain);
+}
+
+span.question {
+  background: var(--siscaccent2);
+  color: var(--sisctextmain) !important;
+  box-shadow: none;
+  border: none;
+}
+
+form.verbose legend,
+.verbose form legend {
+  background: var(--siscbg);
+  border: 2px solid var(--siscaccent2);
+  color: var(--siscaccent2);
+  box-shadow: none;
+}
+
+form dt {
+  border: none;
+}
+
+form dd.required {
+  color: var(--sisctxtcontrast);
+  background: var(--sisctxtmain);
+}
+
+select {
+  background: var(--siscbg);
+  border: 1px solid var(--siscaccent2);
+}
+
+#modal {
+  border: 5px solid var(--siscaccent2);
+  background: var(--siscbg);
+  color: var(--sisctxtmain);
+}
+
+#modal .footer .action.modal-closer {
+  background: var(--siscaccent2);
+  color: var(--sisctextmain);
+  border: none;
+  box-shadow: none;
+}
+
+.listbox,
+fieldset fieldset.listbox {
+  background: var(--siscaccent2);
+  border: 2px solid var(--siscaccent2);
+  box-shadow: none;
+  opacity: 0.7;
+}
+
+.listbox > .heading,
+.listbox > .heading a {
+  color: var(--sisctextmain) !important;
+}
+
+.listbox > .heading a:visited {
+  color: var(--siscaccent2);
+}
+
+.listbox .index {
+  background: var(--siscbg);
+  box-shadow: none;
+}
+
+.listbox li.blurb {
+  border: none;
+}
+
+.listbox li.blurb::after {
+  content: "";
+  display: block;
+  background-image: url("https://i.postimg.cc/MZ438yHM/ao3mothskin-1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 40px;
+  visibility: visible;
+}
+
+li.blurb {
+  border: 2px solid var(--siscaccent2);
+}
+
+li.relationships a,
+.work .relationship a.tag {
+  background: none;
+}
+
+div.comment,
+li.comment {
+  border: 2px solid var(--siscaccent2);
+}
+
+.comment div.icon {
+  border: none;
+}
+
+.comment h4.byline,
+.comment h4.byline a {
+  background: var(--siscaccent2);
+  color: var(--sisctextmain) !important;
+}
+
+.unread,
+.thread .even,
+.statistics .index li:nth-of-type(2n) {
+  background: var(--siscbox);
+}
+
+span.unread {
+  background: var(--siscbg);
+  color: #a6894b;
+  border: 2px solid var(--siscaccent2);
+}
+
+.comment .icon .anonymous,
+.comment .icon .visitor,
+.index .skins .icon,
+.skins .primary .icon,
+.index .mystery .icon,
+.index .tag .icon,
+.index .tagset .icon,
+.abbreviated .icon .anonymous,
+.abbreviated .icon .visitor {
+  background: url("https://i.postimg.cc/MZ438yHB/mothao3-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid var(--siscaccent2);
+}
+
+img.icon[src="/images/skins/iconsets/default/icon_user.png"] {
+  content: url("https://i.postimg.cc/MZ438yHB/mothao3-2.png");
+  border: 1px solid var(--siscaccent2);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+a img {
+  border-radius: 95%;
+  border: 2px solid var(--sisctextmain);
+}
+
+p.kudos {
+  background: url("https://i.postimg.cc/Y2VDw10L/mothao3-1.png") no-repeat;
+  background-size: contain;
+  padding: 0.5em 0.5em 0.5em 100px;
+}
+
+p.kudos {
+  color: var(--siscaccent2) !important;
+}
+
+p.charactercounter {
+  background: var(--siscbg);
+  padding: 3px;
+}
+
+#dashboard.own {
+  background-color: var(--siscbox);
+  border: 3px solid var(--siscaccent1);
+  opacity: 0.7;
+  border-radius: 0.25em;
+}
+
+#dashboard ul {
+  border: none;
+}
+
+#main.errors,
+#main.error-502,
+#main.error-503-maintenance {
+  background: url("https://i.postimg.cc/23RkR5q9/Untitled327-20260806154439.png") center right no-repeat;
+}
+
+#stat_chart > div > div> div > svg > rect {
+  fill: var(--siscbg);
+}
+
+#stat_chart > div > div > div > svg > g > g > g > text {
+  fill: var(--sisctxtmain);
+}
+
+#stat_chart > div > div > div > svg > g > g > g > rect {
+  fill: var(--siscaccent1);
+}
+
+#stat_chart > div > div > div > svg > g > g > rect {
+  fill: var(--siscaccent1);
+}
+
+#footer {
+  border-top: 5px solid var(--siscaccent2);
+}
+
+#footer.region {
+  background: var(--siscbox);
+}
+
+#footer h4.heading {
+  color: var(--sisctxtmain);
+  font-variant: small-caps;
+  font-size: 120%;
+}
+
+#footer,
+#footer a {
+  color: var(--sisctxtmain);
+}
+
+#footer a:hover {
+  color: var(--sisctxtmain);
+  background: var(--siscaccent2);
+}
