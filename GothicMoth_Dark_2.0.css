@@ -1,4 +1,4 @@
-/*Version 2.0 of this Siteskin including color-coded icons made with code by ZerafinaCSS (https://archiveofourown.org/works/57331222/chapters/156317044) */
+/*This Site Skin is using colored icons from Zerafinacss https://github.com/ZerafinaCSS/Replace-the-AO3-Icons-2.0 */
 
 :root {
   --siscbg: #1D0502;
@@ -24,12 +24,15 @@ body,
   background: none;
 }
 
+pre {
+  background: var(--siscbg);
+  padding: 1em;
+}
+
 #workskin {
   margin-top: 2em;
   margin-bottom: 2em;
   padding: 1.5em;
-  background: var(--siscbg);
-  color: var(--sisctxtmain);
 }
 
 .dynamic form {
@@ -45,8 +48,24 @@ dl.work {
   background-color: var(--siscbg);
 }
 
+dl.subscription.index.group,
+dl.inspired.index.group {
+  background: var(--siscbg);
+  padding: 0.5em;
+}
+
 dl.index dd {
   background: var(--siscbg);
+}
+
+dl.meta {
+  border: 3px solid var(--siscaccent2);
+  clear: right;
+  padding: 1.286em 0.75em;
+  position: relative;
+  overflow: hidden;
+  background: var(--siscbg);
+  margin-bottom: 1em;
 }
 
 dt.child {
@@ -74,8 +93,9 @@ dt.child {
 
 #header .heading a {
   padding: 0.2em 0.6em;
-  color: var(--sisctxtmain);
+  color: var(--siscaccent2);
   background: var(--siscbg);
+  font-size: 2em;
 }
 
 home .header h2 {
@@ -90,7 +110,7 @@ home .header h2 {
 
 #greeting .icon img {
   box-shadow: none;
-  border: 1px solid var(--sisctextmain);
+  border: 1px solid var(--sisctxtmain);
   border-radius: 90%;
 }
 
@@ -139,7 +159,7 @@ a.tag:hover {
 #header .dropdown .menu li:hover a,
 #header .primary li a {
   font-variant: small-caps;
-  color: var(--sisctxtmain) !important;
+  color: var(--sisctxtcontrast) !important;
   background: var(--siscaccent2);
   border: none;
   box-shadow: none;
@@ -174,7 +194,7 @@ button,
 #main .actions label {
   background: var(--siscaccent2);
   font-variant: small-caps;
-  color: var(--sisctxtmain);
+  color: var(--sisctxtcontrast);
   border: none;
 }
 
@@ -254,6 +274,9 @@ h5,
 h6,
 .heading {
   color: var(--siscaccent2);
+  font-family: Garamond, serif;
+  font-variant: small-caps;
+  font-weight: bold;
 }
 
 h4 {
@@ -261,8 +284,17 @@ h4 {
 }
 
 .reading h4.viewed {
-  background: var(--sisctxtmain);
+  background: var(--siscaccent2);
   color: var(--sisctxtcontrast);
+}
+
+.blurb .header.module h4 a {
+  font-size: 1.5em;
+}
+
+.bio.module {
+  background: var(--siscbg);
+  padding: 0.5em;
 }
 
 .splash .module h3 {
@@ -305,13 +337,13 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  background: var(--sisctxtmain);
-  color: var(--sisctxtcontrast);
+  background: var(--siscaccent2);
+  color: var(--sisctxtmain);
 }
 
 span.question {
   background: var(--siscaccent2);
-  color: var(--sisctxtmain) !important;
+  color: var(--sisctxtcontrast) !important;
   box-shadow: none;
   border: none;
 }
@@ -329,8 +361,8 @@ form dt {
 }
 
 form dd.required {
-  color: var(--sisctxtcontrast);
-  background: var(--sisctxtmain);
+  color: var(--sisctxtmain);
+  background: var(--sisctxtcontrast);
 }
 
 select {
@@ -347,7 +379,7 @@ select {
 
 #modal .footer .action.modal-closer {
   background: var(--siscaccent2);
-  color: var(--sisctextmain);
+  color: var(--sisctxtmain);
   border: none;
   box-shadow: none;
 }
@@ -357,12 +389,12 @@ fieldset fieldset.listbox {
   background: var(--siscaccent2);
   border: 2px solid var(--siscaccent2);
   box-shadow: none;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .listbox > .heading,
 .listbox > .heading a {
-  color: var(--sisctextmain) !important;
+  color: var(--sisctxtcontrast) !important;
 }
 
 .listbox > .heading a:visited {
@@ -381,16 +413,30 @@ fieldset fieldset.listbox {
 .listbox li.blurb::after {
   content: "";
   display: block;
-  background-image: url("https://i.postimg.cc/MZ438yHM/ao3mothskin-1.png");
+  background: url("https://i.postimg.cc/MZ438yHM/ao3mothskin-1.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   height: 40px;
   visibility: visible;
+  filter: brightness(0) saturate(100%) invert(56%) sepia(20%) saturate(766%) hue-rotate(318deg) brightness(93%) contrast(89%);
+}
+
+li.comment::after {
+  content: "";
+  display: block;
+  background-image: url("https://i.postimg.cc/MZ438yHM/ao3mothskin-1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 20px;
+  visibility: visible;
+  filter: brightness(0) saturate(100%) invert(56%) sepia(20%) saturate(766%) hue-rotate(318deg) brightness(93%) contrast(89%);
 }
 
 li.blurb {
   border: 2px solid var(--siscaccent2);
+  background: var(--siscbg);
 }
 
 li.relationships a,
@@ -401,6 +447,7 @@ li.relationships a,
 div.comment,
 li.comment {
   border: 2px solid var(--siscaccent2);
+  background: var(--siscbg);
 }
 
 .comment div.icon {
@@ -410,9 +457,11 @@ li.comment {
 .comment h4.byline,
 .comment h4.byline a {
   background: var(--siscaccent2);
-  color: var(--sisctextmain) !important;
+  color: var(--sisctxtcontrast) !important;
 }
 
+comment.unread,
+li.comment.unread,
 .unread,
 .thread .even,
 .statistics .index li:nth-of-type(2n) {
@@ -434,22 +483,24 @@ span.unread {
 .index .tagset .icon,
 .abbreviated .icon .anonymous,
 .abbreviated .icon .visitor {
-  background: url("https://i.postimg.cc/MZ438yHB/mothao3-2.png");
   background-repeat: no-repeat;
   background-size: contain;
   border: 1px solid var(--siscaccent2);
+  content: url("https://i.postimg.cc/Y2VDw10L/mothao3-1.png");
+  filter: brightness(0) saturate(100%) invert(56%) sepia(20%) saturate(766%) hue-rotate(318deg) brightness(93%) contrast(89%);
 }
 
 img.icon[src="/images/skins/iconsets/default/icon_user.png"] {
-  content: url("https://i.postimg.cc/MZ438yHB/mothao3-2.png");
-  border: 1px solid var(--siscaccent2);
   background-repeat: no-repeat;
   background-size: contain;
+  border: 1px solid var(--siscaccent2);
+  content: url("https://i.postimg.cc/Y2VDw10L/mothao3-1.png");
+  filter: brightness(0) saturate(100%) invert(56%) sepia(20%) saturate(766%) hue-rotate(318deg) brightness(93%) contrast(89%);
 }
 
 a img {
   border-radius: 95%;
-  border: 2px solid var(--sisctextmain);
+  border: 2px solid var(--sisctxtmain);
 }
 
 p.kudos {
@@ -467,10 +518,17 @@ p.charactercounter {
   padding: 3px;
 }
 
-#dashboard.own {
-  background-color: var(--siscbox);
+.dashboard .own {
+  background: var(--siscbg) !important;
   border: 3px solid var(--siscaccent1);
-  opacity: 0.7;
+  opacity: 0.9;
+  border-radius: 0.25em;
+}
+
+#dashboard.own {
+  background: var(--siscbox) !important;
+  border: 3px solid var(--siscaccent1);
+  opacity: 0.9;
   border-radius: 0.25em;
 }
 
@@ -522,6 +580,10 @@ p.charactercounter {
 #footer a:hover {
   color: var(--sisctxtmain);
   background: var(--siscaccent2);
+}
+
+#footer button {
+  color: var(--sisctxtmain);
 }
 
 .site-skin-metadata {
