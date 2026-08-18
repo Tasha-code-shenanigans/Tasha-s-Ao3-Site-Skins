@@ -1,0 +1,734 @@
+/*Version 2.0 of this Siteskin including color-coded icons made with code by ZerafinaCSS (https://archiveofourown.org/works/57331222/chapters/156317044) */
+
+:root {
+  --siscbg: #1D0502;
+  --sischeader: #1D0502;
+  --siscaccent1: #C39F97;
+  --siscaccent2: #B47F79;
+  --siscbox: #3A120C;
+  --sisctxtmain: #E9D3CE;
+  --sisctxtcontrast: #000;
+  --siscicon1: #E9D3CE;
+  --siscicon2: #C39F97;
+  --siscicon3: #B47F79;
+  --siscicon4: #3A120C;
+  --siscicon5: #1D0502;
+}
+
+body,
+.toggled form,
+.dynamic form,
+.secondary,
+.dropdown {
+  color: var(--sisctxtmain);
+  background: none;
+}
+
+#workskin {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 1.5em;
+  background: var(--sisctxtmain);
+  color: var(--sisctxtcontrast);
+}
+
+.dynamic form {
+  background-color: var(--sischeader);
+}
+
+.wrapper {
+  box-shadow: none;
+}
+
+dl.work {
+  border: 2px solid var(--siscaccent2);
+  background-color: var(--siscbg);
+}
+
+dl.index dd {
+  background: var(--siscbg);
+}
+
+dt.child {
+  background: var(--siscbg);
+  padding: 0.5em;
+  font-variant: small-caps;
+}
+
+#header {
+  background-color: var(--sischeader);
+  background-image: url("https://i.postimg.cc/N0rLH08Y/Untitled327-20260807182601.png");
+  background-repeat: repeat;
+  background-size: 30% auto;
+  background-blend-mode: normal;
+}
+
+#header .heading {
+  height: 5em;
+}
+
+#header .logo,
+#header h1 sup {
+  display: none;
+}
+
+#header .heading a {
+  padding: 0.2em 0.6em;
+  color: var(--sisctxtmain);
+  background: var(--siscbg);
+}
+
+home .header h2 {
+  border-bottom: 5px solid;
+}
+
+.splash .browse li a::before {
+  color: var(--siscaccent2);
+  content: "\00BB";
+  padding: 0 0.25em 0 0;
+}
+
+#greeting .icon img {
+  box-shadow: none;
+  border: 1px solid var(--sisctextmain);
+  border-radius: 90%;
+}
+
+#greeting .dropdown .menu,
+#greeting .dropdown .menu a,
+#greeting li a {
+  color: var(--siscaccent2) !important;
+  background: var(--siscbg) !important;
+  border: none;
+  box-shadow: none;
+}
+
+#greeting .dropdown .menu a:hover,
+#greeting li a:hover,
+a.tag:hover {
+  background: var(--siscbox) !important;
+  color: var(--sisctxtcontrast);
+}
+
+#greeting .menu {
+  width: 12em;
+}
+
+#header .menu {
+  background: var(--siscbg);
+  box-shadow: none;
+  width: 20em;
+}
+
+#header .primary li:not(.search),
+#greeting li {
+  border: none;
+}
+
+#header #search {
+  display: none;
+}
+
+#header .primary {
+  background: var(--sischeader);
+  box-shadow: none;
+  border-bottom: 5px solid var(--siscaccent2);
+  border-top: 5px solid var(--siscaccent2);
+}
+
+#header .dropdown .menu li:hover a,
+#header .primary li a {
+  font-variant: small-caps;
+  color: var(--sisctxtmain) !important;
+  background: var(--siscaccent2);
+  border: none;
+  box-shadow: none;
+}
+
+#header .dropdown:hover a,
+#header .primary li:not(.search) {
+  background: var(--siscaccent1);
+}
+
+#outer {
+  background-color: var(--siscbg);
+  background-image: url("https://i.postimg.cc/N0rLH08Y/Untitled327-20260807182601.png");
+  background-size: 30% auto;
+  background-repeat: repeat;
+  background-blend-mode: normal;
+}
+
+.actions a,
+.action,
+input[type="file"],
+.actions input,
+input[type="submit"],
+button,
+.actions label,
+#main .actions a,
+#main .actions a:visited,
+#main .action,
+#main .actions input,
+#main input[type="submit"],
+#main button,
+#main .actions label {
+  background: var(--siscaccent2);
+  font-variant: small-caps;
+  color: var(--sisctxtmain);
+  border: none;
+}
+
+#dashboard .actions a,
+#dashboard .actions a:visited {
+  border: 1px solid rgba(255 255 255 0);
+}
+
+#dashboard .actions a,
+#dashboard .actions a:visited {
+  background: var(--siscbg);
+  border: 1px solid var(--siscaccent2);
+  color: var(--siscaccent2) !important;
+  font-variant: small-caps;
+}
+
+.required .autocomplete,
+p.notice,
+.notice,
+.comment_notice,
+.kudos_notice,
+.autocomplete .notice,
+ul.notes,
+.caution,
+.error,
+.comment_error,
+.kudos_error,
+.alert.flash {
+  background: var(--siscbox);
+  color: var(--sisctxtmain);
+  border: 3px solid var(--siscaccent1);
+  border-radius: 10px;
+}
+
+.current,
+#dashboard .current,
+#main .current {
+  background: var(--siscaccent1);
+  color: white;
+  font-variant: small-caps;
+  border: none;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+#dashboard .actions a:hover,
+#dashboard .actions a:focus,
+#main .actions a:hover,
+#main input[type="submit"]:hover,
+#main button:hover .actions label:hover,
+#main .action:hover {
+  box-shadow: none;
+  text-shadow: none;
+  border: none;
+  background: var(--siscbg);
+  color: var(--siscaccent1);
+  font-weight: bold;
+}
+
+#main a {
+  color: var(--siscaccent2);
+}
+
+#main a:visited {
+  color: var(--siscaccent2);
+}
+
+a.tag:visited {
+  color: var(--siscaccent2) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+  color: var(--siscaccent2);
+}
+
+h4 {
+  color: var(--sischeader);
+}
+
+.reading h4.viewed {
+  background: var(--sisctxtmain);
+  color: var(--sisctxtcontrast);
+}
+
+.splash .module h3 {
+  color: var(--siscaccent1);
+}
+
+.splash .favorite li:nth-of-type(odd) a {
+  background: none;
+}
+
+fieldset {
+  background: var(--siscbox);
+  border: 2px solid var(--siscaccent2);
+  box-shadow: none;
+  background-size: 100% auto;
+}
+
+fieldset dl,
+fieldset fieldset {
+  background: var(--siscbg);
+  color: var(--siscaccent2) !important;
+  border: 2px solid var(--siscaccent2);
+  box-shadow: none;
+}
+
+.filters dl,
+.filters dt {
+  padding: 0.5em;
+}
+
+input,
+textarea {
+  background: var(--siscbg);
+  border: 2px solid var(--siscaccent2);
+  box-shadow: none;
+  color: var(--sisctxtmain);
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  background: var(--sisctxtmain);
+  color: var(--sisctxtcontrast);
+}
+
+span.question {
+  background: var(--siscaccent2);
+  color: var(--sisctxtmain) !important;
+  box-shadow: none;
+  border: none;
+}
+
+form.verbose legend,
+.verbose form legend {
+  background: var(--siscbg);
+  border: 2px solid var(--siscaccent2);
+  color: var(--siscaccent2);
+  box-shadow: none;
+}
+
+form dt {
+  border: none;
+}
+
+form dd.required {
+  color: var(--sisctxtcontrast);
+  background: var(--sisctxtmain);
+}
+
+select {
+  background: var(--siscbg);
+  border: 1px solid var(--siscaccent2);
+}
+
+#modal {
+  border: 5px solid var(--siscaccent2);
+  background: var(--siscbg);
+  color: var(--sisctxtmain);
+}
+
+#modal .footer .action.modal-closer {
+  background: var(--siscaccent2);
+  color: var(--sisctextmain);
+  border: none;
+  box-shadow: none;
+}
+
+.listbox,
+fieldset fieldset.listbox {
+  background: var(--siscaccent2);
+  border: 2px solid var(--siscaccent2);
+  box-shadow: none;
+  opacity: 0.7;
+}
+
+.listbox > .heading,
+.listbox > .heading a {
+  color: var(--sisctextmain) !important;
+}
+
+.listbox > .heading a:visited {
+  color: var(--siscaccent2);
+}
+
+.listbox .index {
+  background: var(--siscbg);
+  box-shadow: none;
+}
+
+.listbox li.blurb {
+  border: none;
+}
+
+.listbox li.blurb::after {
+  content: "";
+  display: block;
+  background-image: url("https://i.postimg.cc/MZ438yHM/ao3mothskin-1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 40px;
+  visibility: visible;
+}
+
+li.blurb {
+  border: 2px solid var(--siscaccent2);
+}
+
+li.relationships a,
+.work .relationship a.tag {
+  background: none;
+}
+
+div.comment,
+li.comment {
+  border: 2px solid var(--siscaccent2);
+}
+
+.comment div.icon {
+  border: none;
+}
+
+.comment h4.byline,
+.comment h4.byline a {
+  background: var(--siscaccent2);
+  color: var(--sisctextmain) !important;
+}
+
+.unread,
+.thread .even,
+.statistics .index li:nth-of-type(2n) {
+  background: var(--siscbox);
+}
+
+span.unread {
+  background: var(--siscbg);
+  color: var(--siscaccent2);
+  border: 2px solid var(--siscaccent2);
+}
+
+.comment .icon .anonymous,
+.comment .icon .visitor,
+.index .skins .icon,
+.skins .primary .icon,
+.index .mystery .icon,
+.index .tag .icon,
+.index .tagset .icon,
+.abbreviated .icon .anonymous,
+.abbreviated .icon .visitor {
+  background: url("https://i.postimg.cc/MZ438yHB/mothao3-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid var(--siscaccent2);
+}
+
+img.icon[src="/images/skins/iconsets/default/icon_user.png"] {
+  content: url("https://i.postimg.cc/MZ438yHB/mothao3-2.png");
+  border: 1px solid var(--siscaccent2);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+a img {
+  border-radius: 95%;
+  border: 2px solid var(--sisctextmain);
+}
+
+p.kudos {
+  background: url("https://i.postimg.cc/Y2VDw10L/mothao3-1.png") no-repeat;
+  background-size: contain;
+  padding: 0.5em 0.5em 0.5em 100px;
+}
+
+p.kudos {
+  color: var(--siscaccent2) !important;
+}
+
+p.charactercounter {
+  background: var(--siscbg);
+  padding: 3px;
+}
+
+#dashboard.own {
+  background-color: var(--siscbox);
+  border: 3px solid var(--siscaccent1);
+  opacity: 0.7;
+  border-radius: 0.25em;
+}
+
+#dashboard ul {
+  border: none;
+}
+
+#main.errors,
+#main.error-502,
+#main.error-503-maintenance {
+  background: url("https://i.postimg.cc/23RkR5q9/Untitled327-20260806154439.png") center right no-repeat;
+}
+
+#stat_chart > div > div> div > svg > rect {
+  fill: var(--siscbg);
+}
+
+#stat_chart > div > div > div > svg > g > g > g > text {
+  fill: var(--sisctxtmain);
+}
+
+#stat_chart > div > div > div > svg > g > g > g > rect {
+  fill: var(--siscaccent1);
+}
+
+#stat_chart > div > div > div > svg > g > g > rect {
+  fill: var(--siscaccent1);
+}
+
+#footer {
+  border-top: 5px solid var(--siscaccent2);
+}
+
+#footer.region {
+  background: var(--siscbox);
+}
+
+#footer h4.heading {
+  color: var(--sisctxtmain);
+  font-variant: small-caps;
+  font-size: 120%;
+}
+
+#footer,
+#footer a {
+  color: var(--sisctxtmain);
+}
+
+#footer a:hover {
+  color: var(--sisctxtmain);
+  background: var(--siscaccent2);
+}
+
+.site-skin-metadata {
+  content: "==================================================
+
+  Siteskin by Mer-acle, colored icons based on:
+  - Skin:         Replace the AO3 Icons 2.0 (Color scheme: Pink)
+  - Author:       ZerafinaCSS [https://tumblr.com/zerafinacss]
+  - Instructions: https://ao3.org/works/57331222
+  - Repository:   https://github.com/ZerafinaCSS/Replace-the-AO3-Icons-2.0
+  - License:      MIT
+  - Updated:      2026-Mar-21 11:10 UTC
+
+  ==========================================================";
+}
+
+ul.required-tags,
+.bookmark .status span,
+.blurb .icon {
+  opacity: 1 !important;
+}
+
+#symbols-key dl img,
+#bookmark-symbols-key img {
+  width: 0 !important;
+  height: 0 !important;
+  padding: 25px 0 0 25px;
+}
+
+.blurb ul.required-tags li a > span,
+.bookmark p.status a > span,
+.bookmark p.status .count,
+#symbols-key dl img,
+#bookmark-symbols-key img {
+  box-sizing: border-box;
+  border: 1px solid;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.required-tags .rating-notrated,
+.required-tags .category-none,
+.required-tags .warning-no,
+.bookmark p.status .count,
+img[src$="/images/skins/iconsets/default/rating-notrated.png"],
+img[src$="/images/skins/iconsets/default/category-none.png"],
+img[src$="/images/skins/iconsets/default/warning-no.png"] {
+  color: #00000040;
+  background: #ffffffcc;
+}
+
+.required-tags .rating-general-audience,
+img[src$="/images/skins/iconsets/default/rating-general-audience.png"] {
+  color: #0000001a;
+  background: url("https://zerafinacss.github.io/ao3/icons/rating-gen-01.png"), 
+    var(--siscicon1);
+}
+
+.required-tags .rating-teen,
+img[src$="/images/skins/iconsets/default/rating-teen.png"] {
+  color: #0000001a;
+  background: url("https://zerafinacss.github.io/ao3/icons/rating-teen-01.png"), 
+   var(--siscicon2);
+}
+
+.required-tags .rating-mature,
+img[src$="/images/skins/iconsets/default/rating-mature.png"] {
+  color: #0000001a;
+  background: url("https://zerafinacss.github.io/ao3/icons/rating-mature-01.png"), 
+    var(--siscicon3);
+}
+
+.required-tags .rating-explicit,
+img[src$="/images/skins/iconsets/default/rating-explicit.png"] {
+  color: #0000001a;
+  background: url("https://zerafinacss.github.io/ao3/icons/rating-explicit-01.png"), 
+    var(--siscicon4);
+}
+
+.required-tags .category-femslash,
+img[src$="/images/skins/iconsets/default/category-femslash.png"] {
+  color: #0000001a;
+  background: url("https://zerafinacss.github.io/ao3/icons/category-ff-01.png"), 
+    var(--siscicon3);
+}
+
+.required-tags .category-het,
+img[src$="/images/skins/iconsets/default/category-het.png"] {
+  color: #0000001a;
+  background: url("https://zerafinacss.github.io/ao3/icons/category-mf-01.png"), 
+    var(--siscicon4);
+}
+
+.required-tags .category-gen,
+img[src$="/images/skins/iconsets/default/category-gen.png"] {
+  color: #0000001a;
+  background: url("https://zerafinacss.github.io/ao3/icons/category-gen-01.png"), 
+    var(--siscicon1);
+}
+
+.required-tags .category-slash,
+img[src$="/images/skins/iconsets/default/category-slash.png"] {
+  color: #0000001a;
+  background: url("https://zerafinacss.github.io/ao3/icons/category-mm-01.png"), 
+   var(--siscicon2);
+}
+
+.required-tags .category-multi,
+img[src$="/images/skins/iconsets/default/category-multi.png"] {
+  color: #0000001a;
+  background: conic-gradient(from 270deg, var(--siscicon1) 25%, var(--siscicon3) 25% 50%, var(--siscicon4) 50% 75%,var(--siscicon2) 75%);
+}
+
+.required-tags .category-other,
+img[src$="/images/skins/iconsets/default/category-other.png"] {
+  color: #0000001a;
+  background: url("https://zerafinacss.github.io/ao3/icons/category-other-01.png"), 
+    var(--siscicon5);
+}
+
+.required-tags .warning-choosenotto,
+img[src$="/images/skins/iconsets/default/warning-choosenotto.png"] {
+  color: #0000001a;
+  background: url("https://zerafinacss.github.io/ao3/icons/warning-choosenotto-01.png"), 
+   var(--siscicon2);
+}
+
+.required-tags .warning-yes,
+img[src$="/images/skins/iconsets/default/warning-yes.png"] {
+  color: #0000001a;
+  background: url("https://zerafinacss.github.io/ao3/icons/warning-yes-01.png"), 
+    var(--siscicon3);
+}
+
+.required-tags .external-work,
+img[src$="/images/skins/iconsets/default/warning-external-work.png"] {
+  color: #0000001a;
+  background: url("https://zerafinacss.github.io/ao3/icons/warning-external-work-01.png"), 
+    var(--siscicon4);
+}
+
+.required-tags .complete-no,
+img[src$="/images/skins/iconsets/default/complete-no.png"] {
+  color: #0000001a;
+  background: url("https://zerafinacss.github.io/ao3/icons/complete-no-01.png"), 
+    var(--siscicon3);
+}
+
+.required-tags .complete-yes,
+img[src$="/images/skins/iconsets/default/complete-yes.png"] {
+  color: #0000001a;
+  background: url("https://zerafinacss.github.io/ao3/icons/complete-yes-01.png"), 
+    var(--siscicon1);
+}
+
+.status .rec,
+img[src$="/images/skins/iconsets/default/bookmark-rec.png"] {
+  color: #0000001a;
+  background: url("https://zerafinacss.github.io/ao3/icons/bookmark-rec-01.png"), 
+    var(--siscicon3);
+}
+
+.status .public,
+img[src$="/images/skins/iconsets/default/bookmark-public.png"] {
+  color: #0000001a;
+  background: url("https://zerafinacss.github.io/ao3/icons/bookmark-public-01.png"), 
+   var(--siscicon2);
+}
+
+.status .private,
+img[src$="/images/skins/iconsets/default/bookmark-private.png"] {
+  color: #0000001a;
+  background: url("https://zerafinacss.github.io/ao3/icons/bookmark-locked-01.png"), 
+    var(--siscicon5);
+  font-size: 0;
+}
+
+.status .private .text {
+  background: none;
+}
+
+.status .hidden,
+img[src$="/images/skins/iconsets/default/bookmark-hidden.png"] {
+  color: #0000001a;
+  background: url("https://zerafinacss.github.io/ao3/icons/bookmark-locked-01.png"), 
+    var(--siscicon3);
+}
+
+a.rss span {
+  padding: 0;
+  background: none;
+}
+
+.actions li a.rss {
+  display: inline-flex;
+  align-content: center;
+  align-items: center;
+  column-gap: 0.3em;
+}
+
+.actions li a.rss::before {
+  box-sizing: border-box;
+  width: 0.85em;
+  height: 0.85em;
+  border: 1px solid var(--icon-border1);
+  border-radius: 2px;
+  background: url("https://zerafinacss.github.io/ao3/icons/rss-01.png") 
+    var(--siscicon2);
+  background-size: cover;
+  content: "";
+}
