@@ -28,8 +28,8 @@ body,
   margin-top: 2em;
   margin-bottom: 2em;
   padding: 1.5em;
-  background: var(--sisctxtmain);
-  color: var(--sisctxtcontrast);
+  background: var(--siscbg);
+  color: var(--sisctxtmain);
 }
 
 .dynamic form {
