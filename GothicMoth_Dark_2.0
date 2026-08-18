@@ -336,6 +336,7 @@ form dd.required {
 select {
   background: var(--siscbg);
   border: 1px solid var(--siscaccent2);
+  color: var(--sisctxtmain);
 }
 
 #modal {
