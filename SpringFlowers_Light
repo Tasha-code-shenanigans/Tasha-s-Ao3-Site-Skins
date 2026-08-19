@@ -518,9 +518,9 @@ a img {
 }
 
 p.kudos {
-  background: url("https://i.postimg.cc/htmcdDmd/Untitled327-20260819184330.png") no-repeat;
+  background: var(--siscbg);
   background-size: contain;
-  padding: 0.5em 0.5em 0.5em 100px;
+  padding: 0.5em;
 }
 
 p.kudos {
