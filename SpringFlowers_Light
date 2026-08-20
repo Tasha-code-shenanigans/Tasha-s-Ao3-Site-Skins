@@ -104,19 +104,72 @@ dt.child {
   font-size: 2em;
 }
 
+#header .heading a::before {
+  content: " ✿";
+}
+
+#header .heading a::after {
+  content: " ✿";
+}
+
+#header .menu li {
+  border-bottom: 2px solid var(--siscaccent2);
+}
+
 .home .header h2 {
+  margin-left: 100px;
+}
+
+.home .header h2,
+.home .header h3,
+.primary.header.module,
+.parents.module,
+#main.skins-index.dashboard.region h2,
+#main.skins-index.dashboard.region p.notes,
+#main.preferences-index.dashboard.region h2,
+#main.preferences-index.dashboard.region p.notes,
+#main.works-index.dashboard.region h2,
+#main.works-drafts.dashboard.region h2,
+#main.series-index.dashboard.region h2,
+#main.skins-index.dashboard.region h2,
+#main.skins-show.region h2,
+#main.skins-show.region h3,
+#main.bookmarks-index.dashboard.region h2,
+#main.collections-index.dashboard.region h2,
+#main.collections-index.dashboard.region h3,
+#main.inbox-show.dashboard.region h2,
+#main.stats-index.dashboard.region h2,
+#main.stats-index.dashboard.region h3,
+#main.readings-index.dashboard.region h2,
+#main.subscriptions-index.dashboard.region h2,
+#main.creatorships-show.dashboard.region h2,
+#main.creatorships-show.dashboard.region p,
+#main.challenge_signups-index.dashboard.region h2,
+#main.challenge_assignments-index.dashboard.region h2,
+#main.challenge_assignments-index.dashboard.region p.notes,
+#main.challenge_claims-index.dashboard.region h2,
+#main.challenge_claims-index.dashboard.region p.notes,
+#main.related_works-index.dashboard.region h2,
+#main.related_works-index.dashboard.region h3,
+#main.gifts-index.dashboard.region h2 {
   text-align: left;
   border-bottom: 15px solid transparent;
-  padding: 15px;
+  padding: 15px 15px 5px;
   border-image: url("https://i.postimg.cc/DZ98TJQ4/wavyborder1.png") 30 round;
   display: block;
-  margin-left: 100px;
+  background: linear-gradient(to right, rgba(252,240,189,1) 80%, rgba(252,240,189,0));
+  height: auto;
 }
 
 .splash .browse li a::before {
   color: var(--siscaccent2);
   content: "\00BB";
   padding: 0 0.25em 0 0;
+}
+
+.javascript .work.navigation .expanded + .secondary {
+  display: flex;
+  background: var(--siscbg);
 }
 
 #greeting .icon img {
@@ -190,6 +243,18 @@ a.tag:hover {
   background-blend-mode: normal;
 }
 
+a.tag {
+  border-bottom: 2px dotted var(--siscaccent2);
+}
+
+.blurb h4 a:link {
+  color: var(--siscicon2) !important;
+}
+
+.blurb h4 a:nth-child(3)::after {
+  content: " ✿";
+}
+
 .actions a,
 .action,
 input[type="file"],
@@ -212,13 +277,13 @@ button,
 
 #dashboard .actions a,
 #dashboard .actions a:visited {
-  border: 1px solid rgba(255 255 255 0);
+  border: 3px solid var(--siscaccent2);
 }
 
 #dashboard .actions a,
 #dashboard .actions a:visited {
   background: var(--siscbg);
-  border: 1px solid var(--siscaccent2);
+  border: 3px solid var(--siscaccent2);
   color: var(--siscaccent2) !important;
   font-variant: small-caps;
 }
@@ -286,14 +351,9 @@ h4,
 h5,
 h6,
 .heading {
-  height: auto;
-  display: block;
   color: var(--siscaccent2);
-  font-family: "Lucida Calligraphy", "Lucida Handwriting", serif;
+  font-family: "Lucida Handwriting", "Lucida Calligraphy", serif;
   font-weight: bold;
-  background: linear-gradient(to right, rgba(252,240,189,1) 80%, rgba(252,240,189,0));
-  text-align: left;
-  padding: 0.5em;
 }
 
 h4 {
@@ -374,7 +434,7 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  background: var(--siscaccent2);
+  background: var(--siscaccent1);
   color: var(--sisctxtmain);
 }
 
@@ -474,6 +534,7 @@ li.comment {
 .comment h4.byline a {
   background: var(--siscaccent2);
   color: var(--sisctxtcontrast) !important;
+  border-bottom: 2px dotted;
 }
 
 comment.unread,
@@ -501,7 +562,7 @@ span.unread {
 .abbreviated .icon .visitor {
   background-repeat: no-repeat;
   background-size: contain;
-  border: 1px solid var(--siscaccent2);
+  border: none;
   content: url("https://i.postimg.cc/htmcdDmd/Untitled327-20260819184330.png");
 }
 
@@ -585,6 +646,7 @@ p.charactercounter {
   font-variant: small-caps;
   font-size: 120%;
   background: none;
+  padding: 0;
 }
 
 #footer,
