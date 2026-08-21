@@ -1,0 +1,34 @@
+/*Instructions on how to use a parent skin in the readme*/
+
+.splash div.module,
+.logged-in .splash div.module {
+  clear: both;
+  margin-left: 0;
+  margin-right: 0;
+  width: 80%;
+}
+
+#header {
+  background-color: var(--sischeader);
+  background-image: linear-gradient(to right, rgba(252,240,189,0.9) 50%, rgba(252,240,189,0)), url("https://i.postimg.cc/MphmDB5G/Untitled327-20260818180250.png") !important;
+  background-repeat: no-repeat, repeat;
+  background-size: contain, 30%;
+}
+
+#header .heading a {
+  padding: 0.2em 0.6em;
+  color: var(--siscaccent2);
+  line-height: 1.3;
+}
+
+#header .heading a span {
+  font-size: 0.7em;
+}
+
+#header .heading a::before {
+  font-size: 0.5em;
+}
+
+#header .heading a::after {
+  font-size: 0.5em;
+}
