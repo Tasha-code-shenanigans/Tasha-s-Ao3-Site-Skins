@@ -1,4 +1,4 @@
-/*This Site Skin contains colored icons from ZerafinaCSS (https://github.com/ZerafinaCSS/Replace-the-AO3-Icons-2.0) AND you need the parent skin Mobile Addon from this repository*/
+/*This Site Skin contains colored icons from ZerafinaCSS (https://github.com/ZerafinaCSS/Replace-the-AO3-Icons-2.0) AND you need the parent skin SF_Mobile_1.0 from this repository so it looks right on mobile. This version is functional, 2.0 has a different header design tho. */
 
 :root {
   --siscbg: #fcf0bd;
