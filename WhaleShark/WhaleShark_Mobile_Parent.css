@@ -1,0 +1,139 @@
+.post.group .jump {
+  clear: both;
+  display: block;
+}
+
+pre {
+  background: linear-gradient(to right, rgba(1,24,43,1) 40%, rgba(1,24,43,0));
+  padding: 1em;
+}
+
+dl.meta {
+  border: 3px solid var(--siscaccent2);
+  clear: right;
+  padding: 1.286em 0.75em;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, rgba(1,24,43,1) 80%, rgba(1,24,43,0.5));
+  margin-bottom: 1em;
+}
+
+dt.child {
+  padding: 0.5em;
+}
+
+#header .heading {
+  height: 5em;
+}
+
+#header .heading a {
+  padding: 0.2em 0.6em;
+  font-size: 3.2em;
+}
+
+.home .header h2 {
+  margin-left: 100px;
+}
+
+.home .header ul.actions {
+  padding-top: 2em;
+}
+
+#main.dashboard {
+  padding-left: 2em;
+  margin: 0.5em 5em 1em 1em !important;
+}
+
+#outer {
+  background-size: 50% auto, 70% auto !important;
+  background-position: left top, 90% 30% !important;
+}
+
+ul.actions {
+  padding-top: 1em;
+}
+
+.blurb .header.module h4 a {
+  font-size: 1.5em;
+}
+
+.splash div.module,
+.logged-in .splash div.module {
+  clear: both;
+  margin-left: 0;
+  margin-right: 0;
+  width: 80%;
+}
+
+.media .listbox {
+  width: 100% !important;
+}
+
+.filters dl,
+.filters dt {
+  padding: 0.5em;
+}
+
+.listbox {
+  padding: 0;
+  margin: 0.643em auto;
+  overflow: hidden;
+}
+
+.listbox,
+fieldset fieldset.listbox {
+  background: var(--siscaccent2);
+  border: 2px solid var(--siscaccent2);
+  box-shadow: none;
+  opacity: 0.9;
+  float: none;
+}
+
+li.blurb {
+  border: 2px solid var(--siscaccent2);
+  background: var(--siscbg);
+  margin: 1em auto;
+  opacity: 80%;
+}
+
+.dashboard .own {
+  background: var(--siscbg) !important;
+  border: 3px solid var(--siscaccent1);
+  opacity: 0.9;
+  border-radius: 0.25em;
+}
+
+#dashboard.own {
+  border: none;
+}
+
+#dashboard ul {
+  float: none;
+  display: inline-block;
+  padding: 0.5em;
+  text-align: left;
+  border: none;
+  position: relative;
+}
+
+#footer.region {
+  background-size: 50% auto !important;
+}
+
+#header .heading a {
+  padding: 0.2em 0.6em;
+  color: var(--siscaccent2);
+  line-height: 1.3;
+}
+
+#header .heading a span {
+  font-size: 0.7em;
+}
+
+#header .heading a::before {
+  font-size: 0.5em;
+}
+
+#header .heading a::after {
+  font-size: 0.5em;
+}
