@@ -128,7 +128,7 @@ home .header h2 {
 #greeting li a:hover,
 a.tag:hover {
   background: var(--siscbox) !important;
-  color: var(--sisctxtcontrast);
+  color: var(--siscaccent1);
 }
 
 #greeting .menu {
@@ -139,6 +139,10 @@ a.tag:hover {
   background: var(--siscbg);
   box-shadow: none;
   width: 20em;
+}
+
+#header .menu li {
+  border-bottom: 3px solid var(--siscaccent2);
 }
 
 #header .primary li:not(.search),
@@ -157,7 +161,14 @@ a.tag:hover {
   border-top: 5px solid var(--siscaccent2);
 }
 
-#header .dropdown .menu li:hover a,
+#header .dropdown .menu li:hover a {
+  font-variant: small-caps;
+  color: var(--sisctxtmain) !important;
+  background: var(--siscaccent2);
+  border: none;
+  box-shadow: none;
+}
+
 #header .primary li a {
   font-variant: small-caps;
   color: var(--sisctxtcontrast) !important;
@@ -338,8 +349,17 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  background: var(--siscaccent2);
+  background: var(--siscbox);
   color: var(--sisctxtmain);
+}
+
+body#tinymce.mce-content-body {
+  color: var(--sisctxtmain);
+  background-color: var(--siscbg);
+}
+
+.javascript .work.navigation .expanded + .secondary {
+  background: var(--siscbox);
 }
 
 span.question {
@@ -528,7 +548,7 @@ p.charactercounter {
 
 #dashboard.own {
   background: var(--siscbox) !important;
-  border: 3px solid var(--siscaccent1);
+  border: 3px solid var(--siscaccent2);
   opacity: 0.9;
   border-radius: 0.25em;
 }
