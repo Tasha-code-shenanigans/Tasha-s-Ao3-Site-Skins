@@ -183,7 +183,6 @@ dt.child {
 }
 
 .javascript .work.navigation .expanded + .secondary {
-  display: flex;
   background: var(--siscbg);
 }
 
