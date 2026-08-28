@@ -51,6 +51,11 @@ pre {
   border-radius: 10px;
 }
 
+own, .draft, .unread, .child, .unwrangled, .unreviewed {
+  background-color: var(--siscbox);
+  opacity: 0.95;
+}
+
 .dynamic form {
   background-color: var(--sischeader);
 }
