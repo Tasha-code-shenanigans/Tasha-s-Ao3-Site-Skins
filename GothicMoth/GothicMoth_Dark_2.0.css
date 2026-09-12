@@ -344,6 +344,11 @@ fieldset fieldset {
 
 .ui-sortable li {
   background: var(--siscbox);
+  border: 2px solid var(--siscaccent1);
+}
+
+.ui-sortable li:hover {
+  background: var(--siscbg);
   border: 2px solid var(--siscaccent2);
 }
   
