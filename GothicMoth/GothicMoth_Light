@@ -330,6 +330,11 @@ fieldset fieldset {
   padding: 0.5em;
 }
 
+.ui-sortable li {
+  background: var(--siscbox);
+  border: 2px solid var(--siscaccent2);
+}
+
 input,
 textarea {
   background: var(--siscbg);
