@@ -410,6 +410,11 @@ select {
   box-shadow: none;
 }
 
+.ui-sortable li {
+  background: var(--siscbox);
+  border: 2px solid var(--siscaccent2);
+}
+
 .listbox,
 fieldset fieldset.listbox {
   background: var(--siscaccent2);
