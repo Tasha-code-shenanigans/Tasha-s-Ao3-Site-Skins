@@ -425,6 +425,11 @@ h4 {
   width: 70%;
 }
 
+.ui-sortable li {
+  background: var(--siscbox);
+  border: 2px solid var(--siscaccent2);
+}
+
 fieldset {
   background-color: var(--siscbox);
   border: 2px solid var(--siscaccent2);
