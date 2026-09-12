@@ -405,6 +405,11 @@ h4 {
   border-image: url("https://i.postimg.cc/DZ98TJQ4/wavyborder1.png") 30 round;
 }
 
+.ui-sortable li {
+  background: var(--siscbox);
+  border: 2px solid var(--siscaccent2);
+}
+
 fieldset {
   background: var(--siscbox);
   border: 2px solid var(--siscaccent2);
